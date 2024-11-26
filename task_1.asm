@@ -4,11 +4,11 @@ section .data
     input_buffer times 20 db 0
     error_msg db "Invalid input. Please enter a number.", 10, 
     error_msg_len equ $ - error_msg
-    zero_msg db "The result is zero.", 10, 
+    zero_msg db "The number is zero.", 10, 
     zero_msg_len equ $ - zero_msg
-    negative_msg db "The result is negative.", 10, 
+    negative_msg db "The number is negative.", 10, 
     negative_msg_len equ $ - negative_msg
-    positive_msg db "The result is positive.", 10, 
+    positive_msg db "The number is positive.", 10, 
     positive_msg_len equ $ - positive_msg
 
 section .text
